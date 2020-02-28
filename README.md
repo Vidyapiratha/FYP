@@ -37,7 +37,7 @@ You can just go run them directly as a starting point, and then proceed to tinke
 
 Follow the instructions as given above and after that to run the script:
 ```
-THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32, allow_gc=False python char_rnn_train.py
+set THEANO_FLAGS="mode=FAST_RUN"  & set THEANO_FLAGS="device=gpu" & set THEANO_FLAGS="floatX=float32" & set THENO_FLAGS = "allow_gc=False" & python char_rnn_train.py
 ```
 Using a GPU is recommended (It'll reduce the training time significantly).
 
